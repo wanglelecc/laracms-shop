@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Wanglelecc\Laracms\Providers;
+namespace Wanglelecc\Laracms\Shop\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Wanglelecc\Laracms\Shop\Console;
@@ -21,23 +21,15 @@ class LaracmsShopServiceProvider extends ServiceProvider
 //    protected $defer = true;
     
     protected $commands = [
-//        Console\Commands\GenerateToken::class,
-//        Console\Commands\IndexArticle::class,
-//        Console\Commands\SyncBlock::class,
-//        Console\Commands\Uploader::class,
+
     ];
     
     protected $routeMiddleware = [
-//        'laracms.frontend'              => Middleware\FrontendRequests::class,
-//        'laracms.auth'                  => Middleware\Authenticate::class,
+
     ];
     
     protected $middlewareGroups = [
-//        'laracms' => [
-//            'laracms.frontend',
-//            'laracms.authenticated',
-//            'laracms.auth',
-//        ],
+
     ];
     
     public function boot(){

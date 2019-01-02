@@ -44,8 +44,6 @@ class CreateShopBrandTable extends Migration
             $table->timestamps();
             $table->softDeletes();
             $table->index('order','order_index');
-            $table->index('views','views_index');
-            
         });
     }
 

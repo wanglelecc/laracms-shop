@@ -31,7 +31,7 @@ class CreateShopOrderActivityTable extends Migration
             $table->unsignedInteger('order_id')->comment('订单ID');
             $table->foreign('order_id')->references('id')->on('shop_orders')->onDelete('cascade');
             $table->unsignedInteger('activity_id')->comment('活动ID');
-            $table->foreign('activity_id')->references('id')->on('shop_activity')->onDelete('cascade');
+            $table->foreign('activity_id')->references('id')->on('shop_activitys')->onDelete('cascade');
             $table->decimal('free_amount', 10, 2)->default(0)->comment('减免金额');
             $table->timestamps();
         });

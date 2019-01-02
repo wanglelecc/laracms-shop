@@ -12,9 +12,14 @@
         "php": "^7.1.3"
     },
     "autoload": {
+        "classmap": [
+        ],
         "psr-4": {
             "Wanglelecc\\Laracms\\Shop\\": "src"
-        }
+        },
+        "files": [
+            "src/Support/Helpers.php"
+        ]
     },
     "scripts": {
         "test": "./vendor/bin/phpunit"

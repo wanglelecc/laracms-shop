@@ -34,7 +34,7 @@ class CreateShopOrderRevieweTable extends Migration
             $table->foreign('product_id')->references('id')->on('shop_product')->onDelete('cascade');
             $table->unsignedInteger('product_sku_id')->comment('商品SKU ID');
             $table->foreign('product_sku_id')->references('id')->on('shop_product_skus')->onDelete('cascade');
-            $table->decimal('rating', 1, 2)->default(5)->comment('评分');
+            $table->decimal('rating', 3, 2)->default(5)->comment('评分');
             $table->string('review')->nullable()->comment('评价');
             $table->timestamps();
         });

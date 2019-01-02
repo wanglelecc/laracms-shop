@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShopAttrbutesNameTable extends Migration
+class CreateShopAttributesNameTable extends Migration
 {
     /**
      * Run the migrations.
