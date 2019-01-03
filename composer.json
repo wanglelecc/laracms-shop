@@ -29,6 +29,7 @@
             "providers" : [
                 "Wanglelecc\\Laracms\\Shop\\Providers\\LaracmsShopServiceProvider",
                 "Wanglelecc\\Laracms\\Shop\\Providers\\AppServiceProvider",
+                "Wanglelecc\\Laracms\\Shop\\Providers\\AuthServiceProvider",
                 "Wanglelecc\\Laracms\\Shop\\Providers\\EventServiceProvider",
                 "Wanglelecc\\Laracms\\Shop\\Providers\\RouteServiceProvider"
             ]

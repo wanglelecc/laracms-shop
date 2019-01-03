@@ -16,9 +16,7 @@
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
-echo 'tttttttttttttttttttttttt'; exit;
-
-if( !function_exists("shop_backend_view") ){
+if( !function_exists("backend_shop_view") ){
     /**
      * 后台 view 加载函数
      *
@@ -26,7 +24,7 @@ if( !function_exists("shop_backend_view") ){
      * @param $name
      * @return mixed
      */
-    function shop_backend_view($name)
+    function backend_shop_view($name)
     {
         $args = func_get_args();
         $args[0] = 'backend.shop::'.$name;
@@ -36,7 +34,7 @@ if( !function_exists("shop_backend_view") ){
 }
 
 
-if( !function_exists("shop_frontend_view") ){
+if( !function_exists("frontend_shop_view") ){
     /**
      * 前台view加载函数
      *
@@ -44,7 +42,7 @@ if( !function_exists("shop_frontend_view") ){
      * @param $name
      * @return mixed
      */
-    function shop_frontend_view($name)
+    function frontend_shop_view($name)
     {
         $args = func_get_args();
         $args[0] = 'frontend.shop::'.$name;

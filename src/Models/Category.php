@@ -25,7 +25,6 @@ class Category extends Model
 {
     public $table = 'shop_category';
     
-    protected $fillable = ['id','name', 'parent', 'order', 'is_parent'];
-
+    protected $fillable = ['id', 'name', 'alias', 'parent', 'order', 'is_parent'];
     
 }

@@ -29,8 +29,10 @@ class CreateShopCategoryTable extends Migration
         Schema::create('shop_category', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->comment("类目名称");
-            $table->integer("parent")->comment('父id');
-            $table->integer("order")->comment('排序');
+            $table->string('alias')->nullable()->default(null)->comment("别名");
+            $table->integer("parent")->default(0)->comment('父id');
+            $table->integer("order")->default(99)->comment('排序');
+            $table->string('path')->comment("路径");
             $table->enum("is_parent", ['0','1'])->default('0')->comment('是否父级:0否,1是');
             $table->timestamps();
             $table->softDeletes();

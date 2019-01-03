@@ -33,10 +33,9 @@ class AppServiceProvider extends ServiceProvider
 	{
 	    // 注册模型观察者
 //		\Wanglelecc\Laracms\Models\User::observe(                  \Wanglelecc\Laracms\Observers\UserObserver::class);
+		\Wanglelecc\Laracms\Shop\Models\Category::observe(                  \Wanglelecc\Laracms\Shop\Observers\CategoryObserver::class);
 
-
-      
-
+		
 
         // 检测是否在命令行模式
         if ($this->app->runningInConsole()) {

@@ -26,6 +26,7 @@ class CategoryRequest extends Request
     {
         return [
             'name' => 'required|min:1|max:255',
+            'alias' => 'nullable|min:1|max:255',
 //            'keywords' => 'nullable|max:150',
 //            'description' => 'nullable|max:255',
             'parent' => 'required|integer',
